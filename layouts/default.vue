@@ -132,11 +132,12 @@
           <div class="w-full md:w-1/4">
             <h5 class="font-bold text-lg mb-4">Site Map</h5>
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-gray-300">หน้าหลัก</a></li>
-              <li><a href="#" class="hover:text-gray-300">สำหรับผู้ประกอบการ</a></li>
-              <li><a href="#" class="hover:text-gray-300">โครงสร้างองค์กร</a></li>
-              <li><a href="#" class="hover:text-gray-300">ข่าวสาร</a></li>
-              <li><a href="#" class="hover:text-gray-300">คำถามที่พบบ่อย</a></li>
+              <li><a href="/" class="hover:text-gray-300">หน้าหลัก</a></li>
+              <li><a href="/business" class="hover:text-gray-300">สำหรับผู้ประกอบการ</a></li>
+              <li><a href="/organization" class="hover:text-gray-300">โครงสร้างองค์กร</a></li>
+              <li><a href="/news" class="hover:text-gray-300">ข่าวสาร</a></li>
+              <li><a href="/faq" class="hover:text-gray-300">คำถามที่พบบ่อย</a></li>
+              <li><a href="/contact" class="hover:text-gray-300">ติดต่อเรา</a></li>
             </ul>
           </div>
           <div class="w-full md:w-1/3">
@@ -152,15 +153,21 @@
             <ul class="space-y-2">
               <li class="flex justify-between">
                 <span>จำนวนผู้เข้าชมวันนี้:</span>
-                <span><span class="font-semibold">123 </span>คน</span>
+                <span
+                  ><span class="font-semibold">{{ stats.today }} </span> คน</span
+                >
               </li>
               <li class="flex justify-between">
                 <span>จำนวนผู้เข้าชมเดือนนี้:</span>
-                <span><span class="font-semibold">3,456 </span>คน</span>
+                <span
+                  ><span class="font-semibold">{{ stats.thisMonth }} </span> คน</span
+                >
               </li>
               <li class="flex justify-between">
                 <span>จำนวนผู้เข้าชมทั้งหมด:</span>
-                <span><span class="font-semibold">12,345 </span>คน</span>
+                <span
+                  ><span class="font-semibold">{{ stats.total }} </span> คน</span
+                >
               </li>
             </ul>
           </div>
@@ -171,6 +178,14 @@
 </template>
 
 <script setup>
+import { onMounted } from "vue";
+const { recordVisit, stats, fetchStats } = useVisitorStats();
+
+// Record visit when the page loads
+onMounted(async () => {
+  await recordVisit();
+});
+
 const businessMenuItems = [
   { path: "/business", title: "ทั้งหมด" },
   { path: "/business/pharmacy", title: "ยา" },

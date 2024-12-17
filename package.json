@@ -1,0 +1,38 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^43.0.0",
+    "@ckeditor/ckeditor5-vue": "^7.0.0",
+    "@nuxt/icon": "^1.9.1",
+    "@nuxtjs/supabase": "^1.4.4",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@prisma/client": "^6.0.1",
+    "@supabase/supabase-js": "^2.47.7",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.7",
+    "daisyui": "^4.12.14",
+    "formidable": "^3.5.2",
+    "jsonwebtoken": "^9.0.2",
+    "nuxt": "^3.14.1592",
+    "vue": "latest",
+    "vue-chartjs": "^5.3.2",
+    "vue-router": "latest",
+    "vue-toastification": "^2.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "prisma": "^6.0.1",
+    "sass-embedded": "^1.82.0"
+  }
+}

@@ -132,7 +132,7 @@ const getUrlUpload = async () => {
     },
   });
 
-  console.log(data); // Presigned URL
+  console.log(data.url); // Presigned URL
 };
 getUrlUpload();
 

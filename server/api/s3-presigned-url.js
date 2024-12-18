@@ -5,7 +5,6 @@ export default defineEventHandler(async (event) => {
   try {
     // อ่านค่าจาก .env
     const config = useRuntimeConfig();
-    return "OK";
 
     const S3 = new S3Client({
       region: "auto",
@@ -15,6 +14,8 @@ export default defineEventHandler(async (event) => {
         secretAccessKey: config.awsSecretAccessKey, // ตั้งค่าจาก runtimeConfig
       },
     });
+
+    return { url: "ok" };
 
     // อ่าน query parameters
     const query = getQuery(event);

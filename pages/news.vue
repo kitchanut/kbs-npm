@@ -128,7 +128,7 @@ const getUrlUpload = async () => {
     },
     params: {
       key: "dog.png", // ไฟล์ที่ต้องการ
-      operation: "get", // หรือ 'put'
+      operation: "put", // หรือ 'put'
     },
   });
 

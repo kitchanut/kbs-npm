@@ -44,10 +44,8 @@ export default defineEventHandler(async (event) => {
       });
     }
 
-    return { url: "ok" };
-
     // สร้าง presigned URL
-    const url = await getSignedUrl(S3, command, { expiresIn: 3600 });
+    const url = await getSignedUrl(S3, command, { expiresIn: 300 });
 
     return { url };
   } catch (error) {

@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 py-16 text-center">
       <h1 class="text-3xl font-bold underline mb-6">ข่าวสาร</h1>
       <button
-        v-show="isLoggedIn"
+        v-show="isLoggedIn && role === 'admin'"
         class="btn btn-primary text-white"
         onclick="modal_news.showModal()"
         @click="setCreateMode"
@@ -21,7 +21,7 @@
         class="card bg-base-100 shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105 duration-300"
       >
         <img :src="item.url" :alt="item.name" class="w-full h-full object-cover" />
-        <div v-show="isLoggedIn" class="absolute top-2 right-2 flex gap-2">
+        <div v-show="isLoggedIn && role === 'admin'" class="absolute top-2 right-2 flex gap-2">
           <button class="btn btn-circle btn-sm btn-warning" @click="editNews(item)">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,6 +35,22 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-circle btn-sm btn-error" @click="deleteNews(item)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
               />
             </svg>
           </button>
@@ -54,8 +70,14 @@
         </div>
 
         <div class="form-control">
-          <label class="label">URL</label>
-          <input v-model="formData.url" type="url" class="input input-bordered" required />
+          <label class="label">รูปภาพ</label>
+          <input
+            type="file"
+            accept="image/*"
+            class="file-input file-input-bordered w-full"
+            @change="handleFileChange"
+            required
+          />
         </div>
 
         <div class="modal-action pt-8">
@@ -74,6 +96,7 @@
 const supabase = useNuxtApp().$supabase;
 const { $toast } = useNuxtApp();
 const isLoggedIn = useState("isLoggedIn");
+const role = useState("role");
 const loading = ref(false);
 const isEditing = ref(false);
 const editingId = ref(null);
@@ -116,6 +139,36 @@ const editNews = (item) => {
     url: item.url,
   };
   document.getElementById("modal_news").showModal();
+};
+
+const deleteNews = async (item) => {
+  if (!window.confirm("คุณต้องการลบข่าวนี้ใช่หรือไม่?")) return;
+
+  loading.value = true;
+  try {
+    const { error } = await supabase.from("news").delete().eq("id", item.id);
+
+    if (error) throw error;
+
+    await getNews();
+    $toast.success("ลบข่าวเรียบร้อยแล้ว");
+  } catch (error) {
+    console.error("Error deleting news:", error);
+    $toast.error("ไม่สามารถลบข่าวได้");
+  } finally {
+    loading.value = false;
+  }
+};
+
+const handleFileChange = (event) => {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      formData.value.url = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
 };
 
 const handleSubmit = async () => {

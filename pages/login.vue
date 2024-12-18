@@ -61,6 +61,7 @@
 const router = useRouter();
 const { $supabase } = useNuxtApp();
 const isLoggedIn = useState("isLoggedIn");
+const role = useState("role");
 
 if (isLoggedIn.value) {
   router.push("/");
@@ -90,6 +91,7 @@ async function handleLogin() {
 
     // Login successful
     isLoggedIn.value = true;
+    role.value = data.user.user_metadata.role;
     router.push("/");
   } catch (err) {
     error.value = err.message || "Login failed. Please check your credentials.";

@@ -10,7 +10,7 @@ export const useAuth = () => {
       } = await $supabase.auth.getSession();
       if (error) throw error;
       if (!session) return null;
-      return true;
+      return session;
     } catch (error) {
       return null;
     }

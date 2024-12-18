@@ -1,7 +1,7 @@
 <template>
   <div class="bg-custom">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 p-8">
-      <div class="lg:col-span-4 bg-white rounded-lg shadow p-6">
+    <div class="container mx-auto flex flex-col lg:flex-row justify-center p-8 gap-8">
+      <div class="bg-white rounded-lg shadow p-6 w-full lg:w-4/12">
         <h2 class="text-xl font-bold mb-6">ข้อมูลผู้ใช้และเปลี่ยนรหัสผ่าน</h2>
         <div class="space-y-4">
           <div>
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <div class="lg:col-span-8 bg-white rounded-lg shadow p-6">
+      <div v-show="role === 'admin'" class="bg-white rounded-lg shadow p-6 w-full lg:w-8/12">
         <div class="flex justify-between items-center mb-6">
           <h2 class="text-xl font-bold">รายชื่อผู้ใช้ทั้งหมด</h2>
           <button
@@ -180,7 +180,7 @@
               class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-[#6BBD6A] focus:outline-none focus:ring-1 focus:ring-[#6BBD6A]"
             />
           </div>
-          <!-- <div>
+          <div>
             <label class="block text-sm font-medium text-gray-700">บทบาท</label>
             <select
               v-model="editingUser.role"
@@ -189,7 +189,7 @@
               <option value="admin">Admin</option>
               <option value="user">User</option>
             </select>
-          </div> -->
+          </div>
           <div class="flex justify-end space-x-3 mt-6">
             <button
               @click="showEditUserModal = false"
@@ -219,6 +219,7 @@ const users = ref([]);
 const loading = ref(false);
 const currentUser = ref(null);
 const isLoggedIn = useState("isLoggedIn");
+const role = useState("role");
 
 // Get current user
 const getCurrentUser = async () => {
@@ -380,6 +381,7 @@ const handleEditUser = async () => {
     $toast.warning("กรุณากรอกอีเมล");
     return;
   }
+  console.log(editingUser.value);
   loading.value = true;
 
   const {
@@ -415,20 +417,32 @@ const handleEditUser = async () => {
 // Delete user handler
 const handleDeleteUser = async (userId) => {
   if (!confirm("คุณแน่ใจหรือไม่ที่จะลบผู้ใช้นี้?")) return;
-
   loading.value = true;
+  const {
+    data: { session },
+    error,
+  } = await $supabase.auth.getSession();
+
   try {
-    const { error: authError } = await $supabase.auth.admin.deleteUser(userId);
-    if (authError) throw authError;
-
     const { error: profileError } = await $supabase.from("profiles").delete().eq("id", userId);
-
     if (profileError) throw profileError;
 
+    const { data, error } = await $fetch("/api/users/delete", {
+      headers: {
+        Authorization: `Bearer ${session?.access_token}`,
+      },
+      method: "POST",
+      body: {
+        userId: userId,
+      },
+    });
+    if (error) throw error;
+
+    $toast.success("ลบสําเร็จ");
     await getUsers();
   } catch (error) {
     console.error("Error deleting user:", error);
-    alert("เกิดข้อผิดพลาดในการลบผู้ใช้");
+    $toast.error("เกิดข้อผิดพลาดในการลบผู้ใช้");
   } finally {
     loading.value = false;
   }
@@ -440,6 +454,7 @@ const logout = async () => {
     const { error } = await $supabase.auth.signOut();
     if (error) throw error;
     isLoggedIn.value = false;
+    role.value = null;
     navigateTo("/login");
   } catch (error) {
     console.error("Error during logout:", error);

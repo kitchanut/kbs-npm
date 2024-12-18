@@ -10,7 +10,7 @@
         <nuxt-link to="/" class="btn btn-ghost text-xl hidden md:inline-flex"
           >กลุ่มงานคุ้มครองผู้บริโภคและเภสัชสาธารณสุข จังหวัดนครพนม</nuxt-link
         >
-        <nuxt-link to="/" class="btn btn-ghost text-lg md:hidden">สนง.อย. นครพนม</nuxt-link>
+        <nuxt-link to="/" class="btn btn-ghost text-lg md:hidden">อย. นครพนม</nuxt-link>
       </div>
 
       <!-- Desktop Menu -->
@@ -132,12 +132,15 @@
           <div class="w-full md:w-1/4">
             <h5 class="font-bold text-lg mb-4">Site Map</h5>
             <ul class="space-y-2">
-              <li><a href="/" class="hover:text-gray-300">หน้าหลัก</a></li>
-              <li><a href="/business" class="hover:text-gray-300">สำหรับผู้ประกอบการ</a></li>
-              <li><a href="/organization" class="hover:text-gray-300">โครงสร้างองค์กร</a></li>
-              <li><a href="/news" class="hover:text-gray-300">ข่าวสาร</a></li>
-              <li><a href="/faq" class="hover:text-gray-300">คำถามที่พบบ่อย</a></li>
-              <li><a href="/contact" class="hover:text-gray-300">ติดต่อเรา</a></li>
+              <li><nuxt-link to="/" class="hover:text-gray-300">หน้าหลัก</nuxt-link></li>
+              <li><nuxt-link to="/business" class="hover:text-gray-300">สำหรับผู้ประกอบการ</nuxt-link></li>
+              <li><nuxt-link to="/organization" class="hover:text-gray-300">โครงสร้างองค์กร</nuxt-link></li>
+              <li><nuxt-link to="/news" class="hover:text-gray-300">ข่าวสาร</nuxt-link></li>
+              <li><nuxt-link to="/faq" class="hover:text-gray-300">คำถามที่พบบ่อย</nuxt-link></li>
+              <li><nuxt-link to="/contact" class="hover:text-gray-300">ติดต่อเรา</nuxt-link></li>
+              <li v-show="isLoggedIn">
+                <nuxt-link to="/links" class="hover:text-gray-300">แบบฟอร์มกรอกข้อมูล</nuxt-link>
+              </li>
             </ul>
           </div>
           <div class="w-full md:w-1/3">
@@ -178,7 +181,6 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
 const { recordVisit, stats, fetchStats } = useVisitorStats();
 
 // Record visit when the page loads
@@ -201,10 +203,12 @@ const businessMenuItems = [
 const { checkAuth } = useAuth();
 
 const isLoggedIn = useState("isLoggedIn", () => false);
+const role = useState("role", () => null);
 // In your component or page
 const res = await checkAuth();
 if (res) {
   isLoggedIn.value = true;
+  role.value = res.user.user_metadata.role;
 } else {
   isLoggedIn.value = false;
 }

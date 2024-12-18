@@ -33,7 +33,17 @@ export default defineEventHandler(async (event) => {
 
     // Update password if provided
     if (password) {
-      const { error: authUpdateError } = await supabase.auth.admin.updateUserById(id, { password });
+      const { error: authUpdateError } = await supabase.auth.admin.updateUserById(id, {
+        password,
+      });
+      if (authUpdateError) {
+        throw authUpdateError;
+      }
+    }
+    if (role) {
+      const { error: authUpdateError } = await supabase.auth.admin.updateUserById(id, {
+        user_metadata: { role },
+      });
       if (authUpdateError) {
         throw authUpdateError;
       }

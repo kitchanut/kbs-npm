@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         lang: "th"
       },
       charset: "utf-8",
-      titleTemplate: "อย.นครพนม",
+      titleTemplate: "กลุ่มงานคุ้มครองผู้บริโภคและเภสัชสาธารณสุข จังหวัดนครพนม",
       link: [
 
         {

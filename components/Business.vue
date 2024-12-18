@@ -12,7 +12,7 @@
           <h2 class="card-title text-2xl mb-4 flex justify-between">
             สถานประกอบการที่ได้รับอนุญาตจาก สสจ.นครพนม
             <button
-              v-show="isLoggedIn"
+              v-show="isLoggedIn && role === 'admin'"
               class="btn btn-active btn-primary text-white"
               @click="
                 dialogBusiness = true;
@@ -43,7 +43,7 @@
                 </td>
                 <td>{{ business.type }}</td>
                 <td>{{ business.district }}</td>
-                <td v-show="isLoggedIn">
+                <td v-show="isLoggedIn && role === 'admin'">
                   <button
                     class="btn btn-ghost btn-xs"
                     @click="
@@ -96,14 +96,14 @@
       <div class="card bg-base-100 border border-gray-200">
         <div class="card-body">
           <h2 class="card-title text-2xl mb-4">เอกสารคำขอเปิดสถานประกอบการ</h2>
-          <div v-show="isLoggedIn">
+          <div v-show="isLoggedIn && role === 'admin'">
             <client-only>
               <ckeditor v-if="loadClassicEditor" class="mt-3" v-model="editorData" :editor="ClassicEditor" />
             </client-only>
           </div>
 
           <button
-            v-show="isLoggedIn"
+            v-show="isLoggedIn && role === 'admin'"
             :disabled="loading"
             class="mb-3 btn btn-primary disabled:bg-primary disabled:text-white disabled:opacity-50 disabled:cursor-not-allowed text-white mt-4"
             @click="handleSubmit"
@@ -124,6 +124,7 @@ const props = defineProps({
   title: String,
 });
 const isLoggedIn = useState("isLoggedIn");
+const role = useState("role");
 const loadClassicEditor = ref(false);
 const editorData = ref("");
 let ClassicEditor;

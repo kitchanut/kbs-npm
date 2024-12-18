@@ -71,13 +71,15 @@
       </div>
     </div>
     <div class="bg-base-100 py-8 md:py-12 z-100">
-      <div class="w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-0">
-        <img src="/public/logo.png" alt="Placeholder Image" class="h-16 w-16 md:h-20 md:w-20" />
-        <div class="flex-1 text-center md:text-left md:ml-8">
-          <h2 class="text-xl md:text-2xl font-bold">One Stop Service Center (OSSC)</h2>
-          <p class="text-gray-500">สำนักงานสาธารณสุขจังหวัดครพนม</p>
+      <div class="container px-5 mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
+        <div class="flex items-center">
+          <img src="/public/logo.png" alt="Placeholder Image" class="h-16 w-16 md:h-20 md:w-20 mr-4" />
+          <div class="text-center md:text-left">
+            <h2 class="text-xl md:text-2xl font-bold">One Stop Service Center (OSSC)</h2>
+            <p class="text-gray-500">สำนักงานสาธารณสุขจังหวัดครพนม</p>
+          </div>
         </div>
-        <div class="flex flex-col md:flex-row gap-4 md:gap-6">
+        <div class="flex flex-col md:flex-row gap-2 md:gap-2 justify-between">
           <a href="tel:042-515766" class="btn btn-tonal gap-2 transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
               <path
@@ -88,7 +90,6 @@
             </svg>
             <span class="font-medium">042-515766</span>
           </a>
-
           <a
             href="https://line.me/ti/p/@fda_nkp"
             target="_blank"
@@ -105,6 +106,14 @@
             <Icon name="ic:baseline-facebook" size="24" class="text-white" />
             <span class="font-medium">ศูนย์บริการเบ็ดเสร็จ สสจ.นครพนม</span>
           </a>
+          <a
+            href="https://npmpho.moph.go.th/kbs_complaints/"
+            target="_blank"
+            class="btn bg-red-500 hover:bg-red-600 gap-2 transition-colors duration-300"
+          >
+            <Icon name="mdi:megaphone" size="24" class="text-white" />
+            <span class="font-medium text-white">ร้องเรียน</span>
+          </a>
         </div>
       </div>
     </div>
@@ -117,6 +126,83 @@
 
     <!-- Section: วิธีการใช้งาน -->
     <DatabaseSection />
+
+    <!-- Section: หน่วยงานที่เกี่ยวข้อง -->
+    <div class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">หน่วยงานที่เกี่ยวข้อง</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Row 1 -->
+          <a
+            href="https://www.fda.moph.go.th/"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">สำนักงานคณะกรรมการอาหารและยา</h3>
+          </a>
+          <a
+            href="https://hss.moph.go.th/"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">กรมสนับสนุนบริการสุขภาพ</h3>
+          </a>
+          <a
+            href="https://info.go.th/"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">ศูนย์รวมข้อมูลเพื่อติดต่อราชการ</h3>
+          </a>
+
+          <!-- Row 2 -->
+          <a
+            href="https://nakhonphanom.cdd.go.th/"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg font-semibold text-gray-800">สำนักงานพัฒนาชุมชนจังหวัดนครพนม</h3>
+          </a>
+          <a
+            href="https://nakhonphanom.doae.go.th/province/"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">สำนักงานเกษตรจังหวัดนครพนม</h3>
+          </a>
+          <a
+            href="https://pvlo-kop.dld.go.th/webnew/index.php/th/"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">สำนักงานปศุสัตว์จังหวัดนครพนม</h3>
+          </a>
+
+          <!-- Row 3 -->
+          <a
+            href="https://nakhonphanom.moc.go.th/th/page/item/index/id/25"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">สำนักงานพาณิชย์จังหวัดนครพนม</h3>
+          </a>
+          <a
+            href="https://www4.fisheries.go.th/local/index.php/main/site/fpo-nakhonphanom"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">สำนักงานประมงจังหวัดนครพนม</h3>
+          </a>
+          <a
+            href="https://nakhonphanom.industry.go.th/th/"
+            target="_blank"
+            class="outline outline-1 outline-gray-300 p-6 rounded-lg transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-lg text-center font-semibold text-gray-800">สำนักงานอุตสาหกรรมจังหวัดนครพนม</h3>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

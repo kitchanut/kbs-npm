@@ -117,6 +117,25 @@ const getNews = async () => {
 };
 getNews();
 
+const getUrlUpload = async () => {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+
+  const data = await $fetch("/api/s3-presigned-url", {
+    headers: {
+      Authorization: `Bearer ${session?.access_token}`,
+    },
+    params: {
+      key: "dog.png", // ไฟล์ที่ต้องการ
+      operation: "get", // หรือ 'put'
+    },
+  });
+
+  console.log(data); // Presigned URL
+};
+getUrlUpload();
+
 const formData = ref({
   name: "",
   url: "",

@@ -311,7 +311,7 @@ const handleAddUser = async () => {
     data: { session },
     error,
   } = await $supabase.auth.getSession();
-  console.log(session);
+
   if (!newUser.value.email || !newUser.value.password) {
     alert("กรุณากรอกข้อมูลให้ครบถ้วน");
     return;

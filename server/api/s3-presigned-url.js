@@ -5,6 +5,7 @@ export default defineEventHandler(async (event) => {
   try {
     // อ่านค่าจาก .env
     const config = useRuntimeConfig();
+    return "OK";
 
     const S3 = new S3Client({
       region: "auto",
@@ -52,7 +53,7 @@ export default defineEventHandler(async (event) => {
     console.error("Error generating presigned URL:", error);
     throw createError({
       statusCode: 500,
-      statusMessage: "Error:" + error.message,
+      statusMessage: error.message,
     });
   }
 });

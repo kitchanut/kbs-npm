@@ -15,8 +15,6 @@ export default defineEventHandler(async (event) => {
       },
     });
 
-    return { url: "ok" };
-
     // อ่าน query parameters
     const query = getQuery(event);
     const { key, operation } = query;
@@ -45,6 +43,8 @@ export default defineEventHandler(async (event) => {
         statusMessage: "Invalid 'operation' parameter. Use 'get' or 'put'.",
       });
     }
+
+    return { url: "ok" };
 
     // สร้าง presigned URL
     const url = await getSignedUrl(S3, command, { expiresIn: 3600 });

@@ -134,7 +134,7 @@ const getUrlUpload = async () => {
 
   console.log(data.url); // Presigned URL
 };
-getUrlUpload();
+// getUrlUpload();
 
 const formData = ref({
   name: "",

@@ -10,10 +10,15 @@
         <p class="text-lg text-white">สำนักงานสาธารณสุขจังหวัดครพนม</p>
       </div>
       <div class="hidden md:block md:w-4/12">
-        <img src="/public/cover.png" alt="cover" class="w-full h-[320px] object-cover" />
+        <img
+          src="/public/cover.jpg"
+          alt="cover"
+          class="w-full h-[320px] object-cover"
+          style="clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)"
+        />
       </div>
     </div>
-    <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center gap-6 -mt-12">
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center gap-6 -mt-12 relative">
       <!-- Card 1: e-Queuing -->
       <div
         class="bg-blue-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex items-center w-full cursor-pointer border border-blue-200"

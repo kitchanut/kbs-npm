@@ -1,0 +1,917 @@
+[
+    {
+        "id": 1643864,
+        "companyID": 152078,
+        "jobTitle": "หัวหน้าวิจัยและพัฒนาผลิตภัณฑ์",
+        "companyName": "บริษัท แอ็กโกร (ประเทศไทย) จำกัด",
+        "companyLogo": "logo-pic-map/152078_logo_20200519085630.jpeg",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1283165",
+            "name": "นิคมอุตสาหกรรมบางพลี"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "Bangplee Industrial Estate",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 27,
+            "name": "งานวิทยาศาสตร์"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-20T01:03:41.000Z"
+    },
+    {
+        "id": 1433604,
+        "companyID": 321183,
+        "jobTitle": "ล่ามภาษาจีน",
+        "companyName": "บริษัท โนวัส เพาเวอร์ อิควิปเมนท์ จำกัด",
+        "companyLogo": "logo-pic-map/321183_logo_20240110173715.jpeg",
+        "province": {
+            "id": "49",
+            "name": "ระยอง"
+        },
+        "district": {
+            "id": "4903",
+            "name": "บ้านค่าย"
+        },
+        "industrial": {
+            "id": "1330437",
+            "name": "เขตประกอบการอุตสาหกรรมดับบลิวเอชเอ ระยอง"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "WHA Rayong Industrial Land",
+        "salary": "25,000+++",
+        "urgent": {
+            "id": 1,
+            "name": "รับสมัครด่วน"
+        },
+        "jobType": {
+            "id": 25,
+            "name": "งานล่าม/แปล"
+        },
+        "region": {
+            "id": "4",
+            "name": "ภาคตะวันออก"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-18T17:00:00.000Z"
+    },
+    {
+        "id": 873914,
+        "companyID": 134387,
+        "jobTitle": "เจ้าหน้าที่คลังสินค้าสำเร็จรูป",
+        "companyName": "บริษัท สตรอง ครอป จำกัด",
+        "companyLogo": "logo-pic-map/134387_logo_20201202135302.png",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1382027",
+            "name": "นิคมอุตสาหกรรมบางปูเหนือ"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมบางปูเหนือ",
+        "salary": "ตามตกลง หรือ ประสบการณ์",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 6,
+            "name": "งานขนส่งและคลังสินค้า"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-18T10:04:23.000Z"
+    },
+    {
+        "id": 1639808,
+        "companyID": 134387,
+        "jobTitle": "เจ้าหน้าที่ขนส่งและคลังสินค้า",
+        "companyName": "บริษัท สตรอง ครอป จำกัด",
+        "companyLogo": "logo-pic-map/134387_logo_20201202135302.png",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1382027",
+            "name": "นิคมอุตสาหกรรมบางปูเหนือ"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุสาหกรรมบางปูเหนือ",
+        "salary": "",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 6,
+            "name": "งานขนส่งและคลังสินค้า"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-18T10:04:23.000Z"
+    },
+    {
+        "id": 1670424,
+        "companyID": 123874,
+        "jobTitle": "Production Section Manager Production Section Manager (Assembly Line)",
+        "companyName": "Yanmar S.P. Co., Ltd.",
+        "companyLogo": "logo/123874_logo_201709131745.jpeg",
+        "province": {
+            "id": "01",
+            "name": "กรุงเทพมหานคร"
+        },
+        "district": {
+            "id": "0138",
+            "name": "ลาดกระบัง"
+        },
+        "industrial": {
+            "id": "1142280",
+            "name": "นิคมอุตสาหกรรมลาดกระบัง"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "Latkrabang Industrial Estate",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 17,
+            "name": "งานผลิต/ควบคุมคุณภาพ/โรงงาน"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-18T02:46:26.000Z"
+    },
+    {
+        "id": 1672209,
+        "companyID": 123874,
+        "jobTitle": "Marketing Senior Officer",
+        "companyName": "Yanmar S.P. Co., Ltd.",
+        "companyLogo": "logo/123874_logo_201709131745.jpeg",
+        "province": {
+            "id": "01",
+            "name": "กรุงเทพมหานคร"
+        },
+        "district": {
+            "id": "0138",
+            "name": "ลาดกระบัง"
+        },
+        "industrial": {
+            "id": "1142280",
+            "name": "นิคมอุตสาหกรรมลาดกระบัง"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "Latkrabang Industrial Estate",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 2,
+            "name": "งานการตลาด"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-18T02:46:26.000Z"
+    },
+    {
+        "id": 1673526,
+        "companyID": 87928,
+        "jobTitle": "เจ้าหน้าที่วางแผนการผลิตและจัดส่ง",
+        "companyName": "บริษัท พาโตเคมีอุตสาหกรรม จำกัด (มหาชน)",
+        "companyLogo": "logo-pic-map/87928_logo_20200803093442.png",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1283164",
+            "name": "นิคมอุตสาหกรรมบางปู"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมบางปู",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 9,
+            "name": "งานจัดซื้อ/งานธุรการ/ประสานงาน"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-17T17:00:00.000Z"
+    },
+    {
+        "id": 1681959,
+        "companyID": 169425,
+        "jobTitle": "ผู้จัดการฝ่ายคลังสินค้าเเละจัดส่ง",
+        "companyName": "บริษัท ข้าวแสนดี จำกัด",
+        "companyLogo": "logo-pic-map/169425_logo_20231004111341.jpeg",
+        "province": {
+            "id": "28",
+            "name": "ปทุมธานี"
+        },
+        "district": {
+            "id": "2802",
+            "name": "คลองหลวง"
+        },
+        "industrial": {
+            "id": "1182002",
+            "name": "เขตส่งเสริมอุตสาหกรรมนวนคร ปทุมธานี"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "Nava Nakorn Industrial Estate Pathumthani",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 18,
+            "name": "งานผู้บริหาร"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-17T17:00:00.000Z"
+    },
+    {
+        "id": 1677297,
+        "companyID": 180928,
+        "jobTitle": "พนักงานจัดซื้ออะไหล่",
+        "companyName": "บริษัท ป.เคมีเทค จำกัด",
+        "companyLogo": "logo/180928_logo_1.gif",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1283164",
+            "name": "นิคมอุตสาหกรรมบางปู"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมบางปู",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 9,
+            "name": "งานจัดซื้อ/งานธุรการ/ประสานงาน"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-16T17:00:00.000Z"
+    },
+    {
+        "id": 1684297,
+        "companyID": 180928,
+        "jobTitle": "พนักงานผสมยา",
+        "companyName": "บริษัท ป.เคมีเทค จำกัด",
+        "companyLogo": "logo/180928_logo_1.gif",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1283164",
+            "name": "นิคมอุตสาหกรรมบางปู"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมบางปู",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 17,
+            "name": "งานผลิต/ควบคุมคุณภาพ/โรงงาน"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-16T17:00:00.000Z"
+    },
+    {
+        "id": 1689420,
+        "companyID": 331925,
+        "jobTitle": "ช่างประกอบ (พนักงานประจำ)",
+        "companyName": "Gessner Company Limited",
+        "companyLogo": "logo-pic-map/331925_logo_20231019163814.jpeg",
+        "province": {
+            "id": "63",
+            "name": "สระบุรี"
+        },
+        "district": {
+            "id": "6310",
+            "name": "หนองแค"
+        },
+        "industrial": {
+            "id": "1342245",
+            "name": "เขตประกอบการอุตสาหกรรมดับบลิวเอชเอ สระบุรี"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรม WHA",
+        "salary": "13,000 - 19,000 บาท",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 11,
+            "name": "งานช่างเทคนิค"
+        },
+        "region": {
+            "id": "3",
+            "name": "ภาคกลาง"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-16T09:59:59.000Z"
+    },
+    {
+        "id": 1684464,
+        "companyID": 331925,
+        "jobTitle": "ช่างเชื่อม (พนักงานประจำ)",
+        "companyName": "Gessner Company Limited",
+        "companyLogo": "logo-pic-map/331925_logo_20231019163814.jpeg",
+        "province": {
+            "id": "63",
+            "name": "สระบุรี"
+        },
+        "district": {
+            "id": "6310",
+            "name": "หนองแค"
+        },
+        "industrial": {
+            "id": "1342245",
+            "name": "เขตประกอบการอุตสาหกรรมดับบลิวเอชเอ สระบุรี"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรม WHA สระบุรี",
+        "salary": "19,000 - 23,000 บาท",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 11,
+            "name": "งานช่างเทคนิค"
+        },
+        "region": {
+            "id": "3",
+            "name": "ภาคกลาง"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-16T09:59:46.000Z"
+    },
+    {
+        "id": 1684588,
+        "companyID": 82678,
+        "jobTitle": "เจ้าหน้าที่ประสานงานขาย (โรงปุ๋ยวิทยาศาสตร์ สระบุรี )",
+        "companyName": "บริษัท น้ำตาลมิตรผล จำกัด",
+        "companyLogo": "logo-pic-map/82678_logo_20240307122030.jpeg",
+        "province": {
+            "id": "63",
+            "name": "สระบุรี"
+        },
+        "district": {
+            "id": "6310",
+            "name": "หนองแค"
+        },
+        "industrial": {
+            "id": "1283172",
+            "name": "นิคมอุตสาหกรรมหนองแค"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "Nong Khae Industrial Estate",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 4,
+            "name": "งานขาย"
+        },
+        "region": {
+            "id": "3",
+            "name": "ภาคกลาง"
+        },
+        "tags": [
+            "สัมภาษณ์งานออนไลน์",
+            "Online Interview"
+        ],
+        "updatedAt": "2024-12-16T04:24:19.000Z"
+    },
+    {
+        "id": 1680882,
+        "companyID": 82678,
+        "jobTitle": "เจ้าหน้าที่คลังพัสดุ (ชั่วคราว) แหลมฉบัง ชลบุรี",
+        "companyName": "บริษัท น้ำตาลมิตรผล จำกัด",
+        "companyLogo": "logo-pic-map/82678_logo_20240307122030.jpeg",
+        "province": {
+            "id": "09",
+            "name": "ชลบุรี"
+        },
+        "district": {
+            "id": "0908",
+            "name": "ศรีราชา"
+        },
+        "industrial": {
+            "id": "1283168",
+            "name": "นิคมอุตสาหกรรมแหลมฉบัง"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมแหลมฉบัง",
+        "salary": "",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 6,
+            "name": "งานขนส่งและคลังสินค้า"
+        },
+        "region": {
+            "id": "4",
+            "name": "ภาคตะวันออก"
+        },
+        "tags": [
+            "สัมภาษณ์งานออนไลน์",
+            "Online Interview"
+        ],
+        "updatedAt": "2024-12-16T04:24:19.000Z"
+    },
+    {
+        "id": 1562348,
+        "companyID": 82678,
+        "jobTitle": "เจ้าหน้าที่คลังสินค้า (แหลมฉบัง ชลบุรี)",
+        "companyName": "บริษัท น้ำตาลมิตรผล จำกัด",
+        "companyLogo": "logo-pic-map/82678_logo_20240307122030.jpeg",
+        "province": {
+            "id": "09",
+            "name": "ชลบุรี"
+        },
+        "district": {
+            "id": "0908",
+            "name": "ศรีราชา"
+        },
+        "industrial": {
+            "id": "1283168",
+            "name": "นิคมอุตสาหกรรมแหลมฉบัง"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมแหลมฉบัง",
+        "salary": "",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 6,
+            "name": "งานขนส่งและคลังสินค้า"
+        },
+        "region": {
+            "id": "4",
+            "name": "ภาคตะวันออก"
+        },
+        "tags": [
+            "สัมภาษณ์งานออนไลน์",
+            "Online Interview"
+        ],
+        "updatedAt": "2024-12-16T04:24:19.000Z"
+    },
+    {
+        "id": 1541324,
+        "companyID": 82678,
+        "jobTitle": "เจ้าหน้าที่สถิติและวิเคราะห์ข้อมูล",
+        "companyName": "บริษัท น้ำตาลมิตรผล จำกัด",
+        "companyLogo": "logo-pic-map/82678_logo_20240307122030.jpeg",
+        "province": {
+            "id": "09",
+            "name": "ชลบุรี"
+        },
+        "district": {
+            "id": "0908",
+            "name": "ศรีราชา"
+        },
+        "industrial": {
+            "id": "1283168",
+            "name": "นิคมอุตสาหกรรมแหลมฉบัง"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมแหลมฉบัง",
+        "salary": "",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 6,
+            "name": "งานขนส่งและคลังสินค้า"
+        },
+        "region": {
+            "id": "4",
+            "name": "ภาคตะวันออก"
+        },
+        "tags": [
+            "สัมภาษณ์งานออนไลน์",
+            "Online Interview"
+        ],
+        "updatedAt": "2024-12-16T04:24:19.000Z"
+    },
+    {
+        "id": 1604188,
+        "companyID": 82678,
+        "jobTitle": "เจ้าหน้าที่พัสดุ (แหลมฉบัง ชลบุรี)",
+        "companyName": "บริษัท น้ำตาลมิตรผล จำกัด",
+        "companyLogo": "logo-pic-map/82678_logo_20240307122030.jpeg",
+        "province": {
+            "id": "09",
+            "name": "ชลบุรี"
+        },
+        "district": {
+            "id": "0908",
+            "name": "ศรีราชา"
+        },
+        "industrial": {
+            "id": "1283168",
+            "name": "นิคมอุตสาหกรรมแหลมฉบัง"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมแหลมฉบัง ชลบุรี",
+        "salary": "",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 9,
+            "name": "งานจัดซื้อ/งานธุรการ/ประสานงาน"
+        },
+        "region": {
+            "id": "4",
+            "name": "ภาคตะวันออก"
+        },
+        "tags": [
+            "สัมภาษณ์งานออนไลน์",
+            "Online Interview"
+        ],
+        "updatedAt": "2024-12-16T04:24:19.000Z"
+    },
+    {
+        "id": 1520510,
+        "companyID": 82678,
+        "jobTitle": "เจ้าหน้าที่ทรัพยากรบุคคล โรงงานปุ๋ยวิทยาศาสตร์สระบุรี",
+        "companyName": "บริษัท น้ำตาลมิตรผล จำกัด",
+        "companyLogo": "logo-pic-map/82678_logo_20240307122030.jpeg",
+        "province": {
+            "id": "63",
+            "name": "สระบุรี"
+        },
+        "district": {
+            "id": "6310",
+            "name": "หนองแค"
+        },
+        "industrial": {
+            "id": "1283172",
+            "name": "นิคมอุตสาหกรรมหนองแค"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "Nong Khae Industrial Estate",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "urgent": {
+            "id": 0,
+            "name": ""
+        },
+        "jobType": {
+            "id": 16,
+            "name": "งานทรัพยากรบุคคล"
+        },
+        "region": {
+            "id": "3",
+            "name": "ภาคกลาง"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-16T04:24:19.000Z"
+    },
+    {
+        "id": 1670793,
+        "companyID": 261164,
+        "jobTitle": "จป.วิชาชีพ",
+        "companyName": "บริษัท แน็ป นิวตริซายส์ (ประเทศไทย) จำกัด",
+        "companyLogo": "logo-pic-map/261164_logo_20191112141757.png",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1283164",
+            "name": "นิคมอุตสาหกรรมบางปู"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมบางปู",
+        "salary": "ตามตกลง ขึ้นอยู่กับประสบการณ์",
+        "urgent": {
+            "id": 1,
+            "name": "รับสมัครด่วน"
+        },
+        "jobType": {
+            "id": 10,
+            "name": "งานสิ่งแวดล้อม/ความปลอดภัย"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-13T08:03:11.000Z"
+    },
+    {
+        "id": 570595,
+        "companyID": 5248,
+        "jobTitle": "Sales & Promotion เคมีทางการเกษตร ภาคใต้ - ภาคอีสาน",
+        "companyName": "บริษัท เคมแฟค จำกัด",
+        "companyLogo": "logo/5248_logo_1.gif",
+        "province": {
+            "id": "59",
+            "name": "สมุทรปราการ"
+        },
+        "district": {
+            "id": "5901",
+            "name": "เมืองสมุทรปราการ"
+        },
+        "industrial": {
+            "id": "1283164",
+            "name": "นิคมอุตสาหกรรมบางปู"
+        },
+        "disabledPerson": {
+            "id": 1,
+            "name": "ไม่ต้องการระบุ"
+        },
+        "country": {
+            "id": null,
+            "name": null
+        },
+        "transitStations": [],
+        "isTopCompany": false,
+        "workLocation": "นิคมอุตสาหกรรมบางปู",
+        "salary": "ตามประสบการณ์",
+        "urgent": {
+            "id": 1,
+            "name": "รับสมัครด่วน"
+        },
+        "jobType": {
+            "id": 4,
+            "name": "งานขาย"
+        },
+        "region": {
+            "id": "6",
+            "name": "กรุงเทพและปริมณฑล"
+        },
+        "tags": [],
+        "updatedAt": "2024-12-12T17:00:00.000Z"
+    }
+]

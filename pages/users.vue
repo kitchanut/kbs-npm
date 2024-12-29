@@ -138,7 +138,7 @@
               class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-[#6BBD6A] focus:outline-none focus:ring-1 focus:ring-[#6BBD6A]"
             >
               <option value="admin">Admin</option>
-              <!-- <option value="user">User</option> -->
+              <option value="user">User</option>
             </select>
           </div>
           <div class="flex justify-end space-x-3 mt-6">

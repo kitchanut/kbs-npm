@@ -98,6 +98,22 @@
             <p class="text-gray-600">ข้อมูลเกี่ยวกับการขออนุญาตผลิตภัณฑ์สมุนไพร</p>
           </div>
         </div>
+
+        <!-- สมุนไพรควบคุม -->
+        <div
+          class="card bg-base-100 shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105 duration-300 rounded-lg overflow-hidden cursor-pointer"
+          @click="navigateTo('/business/herbal_control')"
+        >
+          <div class="card-body items-center text-center">
+            <div
+              class="rounded-full overflow-hidden border-4 border-red-600 w-16 h-16 flex items-center justify-center"
+            >
+              <Icon name="game-icons:herbs-bundle" size="42" class="text-red-600" style="aspect-ratio: 1" />
+            </div>
+            <h3 class="card-title">สมุนไพรควบคุม</h3>
+            <p class="text-gray-600">ข้อมูลเกี่ยวกับการขออนุญาตสมุนไพรควบคุม</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

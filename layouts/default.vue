@@ -52,6 +52,9 @@
           </li>
           <li><nuxt-link to="/faq" :class="{ active: $route.path === '/faq' }">คำถามที่พบบ่อย</nuxt-link></li>
           <li><nuxt-link to="/contact" :class="{ active: $route.path === '/contact' }">ติดต่อเรา</nuxt-link></li>
+          <li v-show="isLoggedIn">
+            <nuxt-link to="/links" :class="{ active: $route.path === '/links' }">สำหรับเจ้าหน้าที่</nuxt-link>
+          </li>
         </ul>
         <nuxt-link v-show="!isLoggedIn" to="/login" class="btn btn-sm h-[36px]">เข้าสู่ระบบ</nuxt-link>
         <nuxt-link v-show="isLoggedIn" to="/users" class="btn btn-sm h-[36px]">จัดการ</nuxt-link>
@@ -139,7 +142,7 @@
               <li><nuxt-link to="/faq" class="hover:text-gray-300">คำถามที่พบบ่อย</nuxt-link></li>
               <li><nuxt-link to="/contact" class="hover:text-gray-300">ติดต่อเรา</nuxt-link></li>
               <li v-show="isLoggedIn">
-                <nuxt-link to="/links" class="hover:text-gray-300">แบบฟอร์มกรอกข้อมูล</nuxt-link>
+                <nuxt-link to="/links" class="hover:text-gray-300">สำหรับเจ้าหน้าที่</nuxt-link>
               </li>
             </ul>
           </div>
@@ -198,6 +201,7 @@ const businessMenuItems = [
   { path: "/business/health", title: "สถานประกอบการเพื่อสุขภาพ" },
   { path: "/business/hazardous", title: "วัตถุอันตราย" },
   { path: "/business/herbal", title: "ผลิตภัณฑ์สมุนไพร" },
+  { path: "/business/herbal_control", title: "สมุนไพรควบคุม" },
 ];
 
 const { checkAuth } = useAuth();

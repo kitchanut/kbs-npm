@@ -2,7 +2,7 @@
   <ClientOnly>
     <div style="background-image: url('/pattern2.png')">
       <div class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-3xl font-bold underline mb-6">แบบฟอร์มกรอกข้อมูล</h1>
+        <h1 class="text-3xl font-bold underline mb-6">สำหรับเจ้าหน้าที่</h1>
         <button
           v-show="isLoggedIn && role === 'admin'"
           class="btn btn-primary text-white"

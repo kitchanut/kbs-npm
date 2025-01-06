@@ -122,6 +122,24 @@
             </div>
           </div>
         </div>
+        <!-- สมุนไพรควบคุม -->
+        <div
+          class="card bg-base-100 shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105 duration-300 rounded-lg overflow-hidden cursor-pointer"
+          @click="navigateTo('/business/herbal_control')"
+        >
+          <div class="card-body items-center text-center">
+            <div
+              class="rounded-full overflow-hidden border-4 border-red-600 w-16 h-16 flex items-center justify-center"
+            >
+              <Icon name="game-icons:herbs-bundle" size="42" class="text-red-600" style="aspect-ratio: 1" />
+            </div>
+            <h3 class="card-title mb-2">สมุนไพรควบคุม</h3>
+            <div class="flex flex-col items-center">
+              <span class="text-3xl font-bold text-red-600">{{ counts.herbal_control }}</span>
+              <span class="text-gray-500 text-sm">แห่ง</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -138,6 +156,7 @@ const counts = ref({
   health: 0,
   hazardous: 0,
   herbal: 0,
+  herbal_control: 0,
 });
 
 const fetchCounts = async () => {
@@ -153,6 +172,7 @@ const fetchCounts = async () => {
     counts.value.health = data.filter((item) => item.business_type === "health").length;
     counts.value.hazardous = data.filter((item) => item.business_type === "hazardous").length;
     counts.value.herbal = data.filter((item) => item.business_type === "herbal").length;
+    counts.value.herbal_control = data.filter((item) => item.business_type === "herbal_control").length;
   }
 };
 fetchCounts();
